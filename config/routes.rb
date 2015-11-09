@@ -21,16 +21,19 @@ post "/destroy", to: "registrations#destroy"
 get "/deck", to: "decks#index"
 delete "/deck/destroy/:id", to: "decks#destroy"
 post "/deck/create", to: "decks#create"
+# post "/category", to: "decks#category"
 
 get "/deck/:id/cards", to: "cards#index"
 post "/deck/:id/cards", to: "cards#create"
 delete "/deck/:id/cards", to: "cards#destroy"
+
 
 get "/guesses", to: "guesses#index"
 post "guesses/create", to: "guesses#create"
 
 get "/card/:id/edit", to: "cards#edit"
 post "/card/:id/edit", to: "cards#update"
+get "/card/category", to: "cards#category"
 
 
 

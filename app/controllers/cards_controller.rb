@@ -40,4 +40,12 @@ class CardsController < ApplicationController
 	def destroy
 		@card = Card.find_by(card_id: params[:card_id])
 	end
+
+	def category
+		@cards = Card.all
+		@category = @cards.where(category: params[:category])
+		#binding.pry
+		render "category_deck.json.jbuilder", status: :created
+	end
+
 end
