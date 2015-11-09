@@ -25,6 +25,4 @@ class DecksController < ApplicationController
 		#binding.pry
 	end
 
-
-
 end
