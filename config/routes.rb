@@ -19,7 +19,7 @@ post "/login", to: "registrations#login"
 post "/destroy", to: "registrations#destroy"
 
 get "/deck", to: "decks#index"
-delete "/deck/destroy/:id", to: "decks#destroy"
+delete "/deck/destroy", to: "decks#destroy"
 post "/deck/create", to: "decks#create"
 
 get "/deck/:id/cards", to: "cards#index"

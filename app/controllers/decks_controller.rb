@@ -19,7 +19,10 @@ class DecksController < ApplicationController
 	end
 
 	def destroy
-		@deck = Deck.find_by(deck_id: params[:deck_id])
+		@deck = Deck.find_by(id: params[:deck_id])
+		@deck.destroy
+		index
+		#binding.pry
 	end
 
 
